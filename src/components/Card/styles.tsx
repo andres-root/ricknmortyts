@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../styles/colors';
 
 
 const CardContainer = styled.article`
@@ -30,7 +31,7 @@ const Row = styled.div`
 `;
 
 const Key = styled.span`
-  color: #9e9e9e;
+  color: ${colors.silverChalice};
   font-size: 14px;
   text-align: left;
   text-transform: uppercase;
@@ -38,7 +39,7 @@ const Key = styled.span`
 `;
 
 const Value = styled.span`
-  color: #ff9800;
+  color: ${colors.orangePeel};
   font-size: 14px;
   text-align: right;
 `;
@@ -49,7 +50,7 @@ const ImageContainer = styled.div`
 `;
 
 const Info = styled.div`
-  background-color: #333333;
+  background-color: ${colors.mineShaft};
   height: 50%;
   padding: 20px 8px;
 `;
@@ -62,7 +63,7 @@ const Image = styled.img`
 const Name = styled.h1`
   background-color: rgb(51, 51, 51, .5);
   bottom: 0;
-  color: #f5f5f5;
+  color: ${colors.wildSand};
   font-size: 24px;
   font-weight: initial;
   margin: 0;

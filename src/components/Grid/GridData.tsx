@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 
 
-/** A react hook that fetchs grid data. */
+/** A custom hook that fetchs grid data. */
 const GridData = () => {
   const [items, setItems] = useState([]);
 

@@ -30,7 +30,6 @@ const Card: FunctionComponent<CardProperties> = ({
 	origin,
 	location,
 }) => {
-
 	return (
 		<CardContainer>
 			<ImageContainer>
