@@ -30,6 +30,18 @@ const GridData = () => {
   }, []);
 
   /**
+   * Sorts data array by episode in descending order.
+   * @return {array}
+  */
+  const orderByEpisodeDesc = useCallback((data) => {
+    data.sort((a: any, b: any) => {
+      const episodeA = parseInt(a.episode[a.episode.length - 1].match(/\d+/g));
+      const episodeB = parseInt(b.episode[b.episode.length - 1].match(/\d+/g));
+      return episodeB - episodeA;
+    });
+  }, []);
+
+  /**
    * Fetchs API.
    * @return {object}
   */
@@ -48,6 +60,7 @@ const GridData = () => {
         console.log(error);
       });
 
+      orderByEpisodeDesc(data);
       setItems(data);
   }, []);
 
